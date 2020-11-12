@@ -1,0 +1,26 @@
+<h1>Buscar prendas</h1>
+
+<p>En un formulario debemos atender a los atributos <code>action</code> (dónde enviamos la información) y
+    <code>method</code> (get/post)</p>
+<p>El atributo <code>name</code> de cada input será la key de la query string</p>
+
+<hr>
+
+<form action="/tienda/resultados-busqueda" method="GET">
+
+    <label>
+        Color:
+        <input type="text" name="color">
+    </label><br><br>
+    <label>
+        Talla:
+        <input type="text" name="size">
+    </label><br><br>
+    <label>
+        Prenda:
+        <input type="text" name="clothes">
+    </label><br><br>
+
+    <input type="submit" value="Buscar prendas">
+
+</form>

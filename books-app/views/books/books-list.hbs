@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Listado de libros</h1>
+
+    <ul>
+        {{#each allBooks}}
+        <li>{{this.title}} <small>[<a href="/libros/detalle/{{_id}}">ver detalles</a>]</small></li>
+        {{/each}}
+    </ul>
+</div>
